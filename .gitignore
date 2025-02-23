@@ -70,3 +70,4 @@ build/
 .env.development
 .env.test
 .env.production
+Icon
