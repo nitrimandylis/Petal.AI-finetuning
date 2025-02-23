@@ -1,6 +1,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_dir = "../Models/gpt2-trained"
+model_dir = "../Models/gpt2-trained" # Replace with the path to your model directory
 model = AutoModelForCausalLM.from_pretrained(model_dir)
 tokenizer = AutoTokenizer.from_pretrained(model_dir)
 

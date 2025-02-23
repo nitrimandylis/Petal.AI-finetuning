@@ -3,8 +3,8 @@ import numpy as np
 from safetensors.torch import load_file
 
 # Define paths here
-SAFETENSORS_PATH = "/Users/nick/Developer/Personal_Project/Python/Models/gpt2-trained/model.safetensors"  # Change to your .safetensors file path
-OUTPUT_PATH = "/Users/nick/Developer/Personal_Project/Python/Models/gpt2-ggml/skills-bot.ggml"
+SAFETENSORS_PATH = "---your path here---/Models/gpt2-trained/model.safetensors"  # Path to your trained model's safetensors file
+OUTPUT_PATH = "---your path here---/Models/gpt2-ggml/skills-bot.ggml"  # Path where the converted GGML model will be saved
 
 def quantize_to_int8(tensor):
     """

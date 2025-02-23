@@ -192,12 +192,18 @@ def test_model(model_dir, prompt):
 # Main function
 def main():
     try:
-        csv_file = "/Users/nick/Developer/Personal_Project/Petal.AI/LLM-finetuning/Datasets/skills.csv"
+        # Path to your training dataset CSV file
+        csv_file = "---your path here---/Datasets/skills.csv"
+        # SQLite database URL - you can keep this local
         database_url = "sqlite:///my_database.db"
+        # Name of the table in the database
         table_name = "training_data"
-        model_dir = "/Users/nick/Developer/Personal_Project/Models/gpt2"  # Updated to use GPT-2 model
-        output_dir = "/Users/nick/Developer/Personal_Project/Models/gpt2-trained"  # Updated output path
-        test_prompt = "How can I improve my public speaking skills?"
+        # Path to the base GPT-2 model directory
+        model_dir = "---your path here---/Models/gpt2"
+        # Path where the fine-tuned model will be saved
+        output_dir = "---your path here---/Models/gpt2-trained"
+        # Example test prompt
+        test_prompt = "" #your text prompt
 
         # Create output directory if it doesn't exist
         os.makedirs(output_dir, exist_ok=True)

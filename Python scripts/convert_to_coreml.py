@@ -4,8 +4,10 @@ import torch
 import numpy as np
 
 # Define paths here
-MODEL_PATH = "/Users/nick/Developer/Personal_Project/Models/gpt2-trained"  # Path to your trained model directory
-OUTPUT_PATH = "/Users/nick/Developer/Personal_Project/Models/coreml-trained/gpt2-trained.mlpackage"  # Output path for CoreML model
+# Path to your trained model directory (the output from train_model.py)
+MODEL_PATH = "---your path here---/Models/gpt2-trained"
+# Output path for the converted CoreML model
+OUTPUT_PATH = "---your path here---/Models/coreml-trained/gpt2-trained.mlpackage"
 
 def convert_to_coreml(model_path, output_path):
     print(f"Loading model from {model_path}...")
