@@ -59,6 +59,7 @@ temp/
 # OS-specific
 .DS_Store
 Thumbs.db
+Icon
 
 # Distribution
 dist/
