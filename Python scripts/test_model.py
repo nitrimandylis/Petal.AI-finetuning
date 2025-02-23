@@ -5,7 +5,7 @@ model = AutoModelForCausalLM.from_pretrained(model_dir)
 tokenizer = AutoTokenizer.from_pretrained(model_dir)
 
 # Test the model with a prompt
-test_prompt = "How can I handle criticism better?"
+test_prompt = "" # Replace with your test prompt
 inputs = tokenizer(test_prompt, return_tensors="pt")
 
 # Generate output without num_return_sequences
